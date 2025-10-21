@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Web Avanzada - IDGS</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Mi Página Web Avanzada</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#materias">Materias</a></li>
+        <li><a href="#horarios">Horarios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="seccion">
+    <h2>Bienvenido</h2>
+    <p>Esta página fue creada como práctica avanzada para la carrera de IDGS en la UTSC.</p>
+  </section>
+
+  <section id="materias" class="seccion">
+    <h2>Materias</h2>
+    <table>
+      <thead>
+        <tr><th>Clave</th><th>Materia</th><th>Profesor</th><th>Créditos</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>IDG101</td><td>Programación I</td><td>Ing. López</td><td>8</td></tr>
+        <tr><td>IDG102</td><td>Base de Datos</td><td>Mtra. Gómez</td><td>8</td></tr>
+        <tr><td>IDG103</td><td>Desarrollo Web</td><td>Ing. Martínez</td><td>7</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="horarios" class="seccion">
+    <h2>Horarios</h2>
+    <div class="botones">
+      <button onclick="mostrarHorario('matutino')">Matutino</button>
+      <button onclick="mostrarHorario('vespertino')">Vespertino</button>
+    </div>
+    <div id="horario"></div>
+  </section>
+
+  <section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <form id="form-contacto">
+      <label>Nombre:</label>
+      <input type="text" id="nombre" required>
+
+      <label>Correo:</label>
+      <input type="email" id="correo" required>
+
+      <label>Mensaje:</label>
+      <textarea id="mensaje" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 - Universidad Tecnológica Santa Catarina | IDGS</p>
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+</html>
